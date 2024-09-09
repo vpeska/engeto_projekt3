@@ -1,4 +1,4 @@
-Pro spusteni skriptu je vhodne vytvorit nove virtualni prostredi a activovat ho:
+Pro spusteni skriptu je vhodne vytvorit nove virtualni prostredi a aktivovat ho:
 
 >python -m venv venv
 
@@ -29,5 +29,8 @@ Pri neexistujici nebo nereagujici URL napriklad:
 
 Error: HTTPSConnectionPool(host='voby.cz', port=443): Max retries exceeded with url: /pls/ps2017nss/ps32?xjazyk=CZ&xkraj=8&xnumnuts=5205 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000025A869799D0>, 'Connection to voby.cz timed out. (connect timeout=None)'))
 Chyba pri zadani: Prvni argument neni funkcni URL nebo stranka nereaguje.
+
+Pri spatne zadanem nazvu csv souboru, napriklad pri zadavani kutna_hora.csv:
+Chyba pri zadani: Neplatny nazev souboru. Povoleny jsou jen alfanumericke znaky, podtrzitko a pomlcka. Nazev nesmi zahrnovat priponu .csv ani jinou.
 
 Pokud se zada funkcni URL ale nespravna adresa nez jsou odkazy popsane na zacatku, tak skript probehne bez hlaseni chyb, ale vysledna tabulka csv neobsahuje relevantni data voleb.
